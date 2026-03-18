@@ -1,6 +1,5 @@
 {
-  "outputDirectory": ".",
-  "buildCommand": "",
-  "installCommand": "",
-  "framework": null
+  "rewrites": [
+    { "source": "/api/generate", "destination": "/api/generate.mjs" }
+  ]
 }
