@@ -11,7 +11,7 @@ export default async function handler(req, res) {
     console.log('API Key present:', !!apiKey);
     
     const response = await fetch(
-`https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${apiKey}`,      {
+`https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash-lite:generateContent?key=${apiKey}`,
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
